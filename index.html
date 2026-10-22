@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Набор в команду</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<main class="card">
+<div class="badge">🚀 НАБОР В КОМАНДУ</div>
+<h1>Присоединяйся к <span>нашей команде</span></h1>
+<p class="subtitle">Заполни анкету, и мы рассмотрим твою заявку!</p>
+
+<form id="form">
+<label>👤 Имя и фамилия</label>
+<input name="fullname" placeholder="Иван Иванов" maxlength="100" required>
+
+<label>🎂 Возраст</label>
+<input name="age" type="number" min="1" max="120" placeholder="20" required>
+
+<label>💼 Опыт работы</label>
+<textarea name="experience" maxlength="2000"
+placeholder="Расскажи о своём опыте..." required></textarea>
+
+<label>📁 Портфолио</label>
+<input name="portfolio" type="url" maxlength="500"
+placeholder="https://github.com/username" required>
+
+<label>💻 Языки программирования</label>
+<input name="languages" maxlength="500"
+placeholder="Python, JavaScript, C++" required>
+
+<button id="submit" type="submit">📨 Отправить заявку</button>
+<p id="status" role="status"></p>
+</form>
+
+<footer>© 2026 Recruitment Team</footer>
+</main>
+<script src="/script.js"></script>
+</body>
+</html>
